@@ -16,6 +16,7 @@ scroll_bar_teacher.pack(side=RIGHT,fill=Y)
 #下面的这句是关键：指定Listbox的yscrollbar的回调函数为Scrollbar的set
 listb_teacher['yscrollcommand'] = scroll_bar_teacher.set
 var=IntVar()
+var.set(1)#单选互斥
 Ra_Button1=Radiobutton(root, text="全选", variable=var, value=1)
 Ra_Button1.pack( anchor = W )
 Ra_Button2=Radiobutton(root, text="反选", variable=var, value=2)
