@@ -1,7 +1,5 @@
 ﻿# -*-coding:utf-8 -*-
-import sys  
-#reload(sys)
-#sys.setdefaultencoding('utf8')
+import sys
 import itchat
 from itchat.content import TEXT
 from itchat.content import *
@@ -18,10 +16,6 @@ def send_to_all_teacher():
 			print("已发送给:",friend['RemarkName'],send_message)
 			itchat.send(send_message,friend['UserName'])
 			time.sleep(1)
-	#init_UI_teacher(teachers)
-	#print "Send OK!"
-if __name__=='__main__':
+if __name__=='__main__':#程序入口点
 	itchat.auto_login()
 	send_to_all_teacher()
-
-  
