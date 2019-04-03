@@ -17,5 +17,5 @@ def send_to_all_teacher():
 			itchat.send(send_message,friend['UserName'])
 			time.sleep(1)
 if __name__=='__main__':#程序入口点
-	itchat.auto_login()
+	itchat.auto_login()#出现微信登录二维码
 	send_to_all_teacher()
